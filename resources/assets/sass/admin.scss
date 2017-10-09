@@ -1,0 +1,172 @@
+// Fonts
+@import url("https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700&lang=en");
+
+// Bootstrap
+
+@import "node_modules/v-toaster/dist/v-toaster";
+@import "resources/assets/plugins/font-awesome/scss/font-awesome";
+
+@import "resources/assets/plugins/dataTables/datatables.min";
+@import "resources/assets/plugins/summernote/summernote";
+@import "resources/assets/plugins/summernote/summernote-bs3";
+
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+// Variables, Mixins
+@import "variables";
+
+@import "import/variables";
+
+// INSPINIA Theme Elements
+// @import "import/typography";
+@import "import/navigation";
+@import "import/top_navigation";
+@import "import/buttons";
+// @import "import/badgets_labels";
+// @import "import/elements";
+@import "import/sidebar";
+@import "import/base";
+// @import "import/pages";
+// @import "import/chat";
+@import "import/metismenu";
+// @import "import/spinners";
+
+// Landing page styles
+//@import "import/landing";
+
+// RTL Support
+@import "import/rtl";
+
+// For demo only - config box style
+@import "import/theme-config";
+
+// INSPINIA Skins
+@import "import/skins";
+@import "import/md-skin";
+
+// Media query style
+@import "import/media";
+
+
+// Custom style
+@import "float_title";
+// Clear layout on print mode
+@media print {
+  nav.navbar-static-side {
+    display: none;
+  }
+  body { overflow: visible !important; }
+
+  #page-wrapper {
+    margin: 0;
+  }
+}
+html, body{
+  width: 100%;
+  margin: 0 auto;
+  //background-color: #d2d2d4;
+  background-color: #2f4050;
+}
+.logo { width: 100%; max-width: 207px;}
+.input-group{
+  display: block !important;
+  width: 100%;
+}
+.Password{
+  max-width: 100% !important;
+}
+.input-group-addon{
+  position: absolute;
+  top: 0;
+  z-index: 4;
+  right: 0;
+  width: 36px;
+  padding: 0;
+  border:none !important;
+  height: 100%;
+  color: #333;
+  line-height: 37px;
+  border: none;
+}
+/*input toggle*/
+.switch {
+  position: relative !important;
+  z-index: 2 !important;
+  display: inline-block;
+  width: 50px;
+  height: 28px;
+  float: left;
+  margin: 10px 0;
+  input {
+    display:none;
+    &:checked + .slider {
+      background-color: #36C864;
+      border: 1px solid #0AB861;
+    }
+    &:checked + .slider:before {
+      -webkit-transform: translateX(26px);
+      -ms-transform: translateX(26px);
+      transform: translateX(26px);
+    }
+  }
+  .slider {
+    position: absolute;
+    cursor: pointer;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background-color: #c70a1c;
+    border: 1px solid #c70a1c;
+    -webkit-transition: .4s;
+    transition: .4s;
+    &:before {
+      position: absolute;
+      content: "";
+      height: 28px;
+      width: 28px;
+      left: -2px;
+      bottom: -1px;
+      background-color: white;
+      -webkit-transition: .4s;
+      transition: .4s;
+    }
+    &:focus + .slider {
+      box-shadow: 0 0 1px #2196F3;
+    }
+  }
+}
+/* Rounded sliders */
+.slider.round {
+  border-radius: 34px;
+  &:before {
+    border-radius: 50%;
+  }
+}
+
+.dropbox {
+  outline: 2px dashed grey; /* the dash box */
+  outline-offset: -10px;
+  background: lightcyan;
+  color: dimgray;
+  position: relative;
+  cursor: pointer;
+  &:hover{
+      background: lightblue; /* when mouse over to the drop zone, change color */
+  }
+  p {
+      font-size: 1.2em;
+      text-align: center;
+      padding: 30px 0;
+  }
+}
+
+.input-file {
+  opacity: 0; /* invisible but it's there! */
+  width: 100%;
+  height: 100px;
+  position: absolute;
+  cursor: pointer;
+}
+.showImage{
+  width:50%;
+}

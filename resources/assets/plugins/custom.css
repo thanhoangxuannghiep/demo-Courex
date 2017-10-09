@@ -1,0 +1,81 @@
+ .login_info {
+            top: -120px !important;
+        }
+        #gs_input {
+            height: 30px !important;
+        }
+        #edict_input {
+            height: 30px !important;
+        }
+        #map_input {
+            height: 30px !important;
+        }
+        .search_btn {
+            height: 29px !important;
+        }
+        #map_button {
+            background: #1b7bbd  url(../images/custom/icon-search.png) no-repeat scroll center center;
+            height: 29px !important;
+        }
+        input[type="text"],
+        input[type="password"],
+        input[type="file"],
+        input[type="submit"],
+        input[type="button"],
+        input[type="reset"],
+        select,
+        textarea,
+        .textarea,
+        button {
+            background-image: url(../images/forms/input_shadow.png);
+            background-repeat: no-repeat;
+            border: 1px solid;
+            border-color: #BFBFBF #DEDEDE #DEDEDE #BFBFBF;
+            font: 1em Arial, Helvetica, Verdana, sans-serif;
+            padding: 5px 1px;
+        }
+        .group_items-header a {
+            letter-spacing: -0.7px;
+            margin-left: 10px;
+            overflow: unset;
+        }
+        #site-content {
+            margin: 0 auto;
+            width: 1019px;
+            color: #58595b;
+            font-size: 15px;
+            font-family: Roboto-Light;
+        }
+        #sortable li:hover {
+            background-color: rgba(6, 11, 5, 0.3);color: #fff;
+        }
+        #sortable li:hover a{color: #fff}
+        #sortable li .edit-item {
+             color: #fff;
+            clear: both;
+            cursor: pointer;
+            display: none;
+            
+            position: absolute;
+            left: 5px;
+            top: 10px;
+            
+        }
+        #sortable li .remove-item {
+             clear: both;color: #fff;
+            cursor: pointer;
+          
+            position: absolute;
+            right: 5px;
+            top: 11px;
+            
+            display: none;
+        }
+        #sortable li .edit-item i,#sortable li .remove-item i{font-size: 12px}
+        #sortable li:HOVER .edit-item {
+            display: block;
+        }
+        #sortable li:HOVER .remove-item {
+            display: block;
+        }
+        .journal-content-article p{font-size: 15px;line-height: 1.5;margin-bottom: 12px}

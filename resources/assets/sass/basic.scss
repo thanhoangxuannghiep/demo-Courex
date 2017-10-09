@@ -1,0 +1,62 @@
+
+// Fonts
+@import url(https://fonts.googleapis.com/css?family=Raleway:300,400,600);
+
+// Variables
+@import "variables";
+
+// Bootstrap
+@import "node_modules/bootstrap-sass/assets/stylesheets/bootstrap";
+@import "resources/assets/plugins/font-awesome/scss/font-awesome";
+@import "float_title";
+
+html, body{
+  width: 100%;
+  max-width: $body-max-width;
+  margin: 0 auto;
+}
+.logo { width: 100%; max-width: 207px;}
+.login {
+  width: 100%;
+  max-width: $login-width;
+  margin: 0 auto;
+  margin-top: 10px;
+  @media screen and (max-width: 767px) {
+
+  }
+  .panel-body {
+    min-height: 580px;
+    padding-top: 50px;
+  }
+}
+
+.modal {
+  text-align: center;
+}
+
+.modal-dialog {
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+.input-group { width: 100%;}
+
+.checkbox label { padding-left: 0;}
+
+@media screen and (min-width: 768px) {
+  .modal:before {
+    display: inline-block;
+    vertical-align: middle;
+    content: " ";
+    height: 100%;
+  }
+}
+
+@media screen and (max-width: 767px) {
+
+}
+
+.carousel-indicators.login-screen { position: inherit; width: 100%; margin-left: 0; top: 0; left: 0; }
+.carousel-indicators.login-screen li { height: 4px; width: 40px; border-color: #ccc; background-color: #ccc;}
+.carousel-indicators.login-screen .active, .carousel-indicators.login-screen .selected { height: 4px; margin: 1px; border-color: #147cbf; background-color: #147cbf; }
